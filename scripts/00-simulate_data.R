@@ -31,3 +31,5 @@ dinesafe_data <- data.frame(
   lat,
   long
 )
+
+head(dinesafe_data)
