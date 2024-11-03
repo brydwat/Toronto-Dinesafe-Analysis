@@ -13,7 +13,7 @@ restaurant_names <- paste("Restaurant", seq(1:60))
 
 # Generate random inspection outcomes
 set.seed(345)
-severity <- sample(c("C", "S", "M", " "),
+severity <- sample(c("C", "S", "M", ""),
                    size = 60, 
                    replace = TRUE,
                    prob = c(0.05, 0.20, 0.55, 0.20)
@@ -33,3 +33,5 @@ dinesafe_data <- data.frame(
 )
 
 head(dinesafe_data)
+
+# Other potential categories to include: Action,  Amount Fined
