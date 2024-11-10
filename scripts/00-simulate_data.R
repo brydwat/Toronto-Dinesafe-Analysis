@@ -43,7 +43,7 @@ bbox <- c(left = -79.6393, bottom = 43.5810, right = -79.1169, top = 43.8555)
 
 register_stadiamaps(key = "aa163ab0-fe06-4ed0-9a4e-deb449f3e9a9", write = TRUE)
 
-toronto_stamen_map <- get_stadiamap(bbox, zoom = 11, maptype = "stamen_toner_lite")
+toronto_stamen_map <- get_stadiamap(bbox, zoom = 12, maptype = "stamen_toner_lite")
 
 ggmap(toronto_stamen_map)
 
@@ -64,4 +64,4 @@ ggmap(toronto_stamen_map, extent = "normal", maprange = FALSE) +
   theme_minimal() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
-  
+
